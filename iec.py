@@ -58,7 +58,7 @@ from albumentations import (
 class IEC(Dataset):
     CFG = {
         'fold_num': 5,
-        'seed': 719,
+        'seed': 42,
         'model_arch': 'levit_256',
         'img_size': 224,
         'epochs': 1,
