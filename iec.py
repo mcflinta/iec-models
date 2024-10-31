@@ -47,9 +47,7 @@ from torch.utils.tensorboard import SummaryWriter
 writer = SummaryWriter()
 import albumentations 
 from albumentations.pytorch import ToTensorV2
-if sys.version_info.major == 3 and sys.version_info.minor >= 10:
-    import collections
-    setattr(collections, "MutableMapping", collections.abc.MutableMapping)
+
 from albumentations import (
           HorizontalFlip, VerticalFlip, IAAPerspective, ShiftScaleRotate, CLAHE, RandomRotate90,
           Transpose, ShiftScaleRotate, Blur, OpticalDistortion, GridDistortion, HueSaturationValue,
