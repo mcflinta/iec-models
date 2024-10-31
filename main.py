@@ -20,7 +20,7 @@ if __name__ == '__main__':
     device = torch.device(IEC.CFG['device'])
     print(device)
         
-    model = torch.hub.load('facebookresearch/LeViT:main', 'LeViT_256', num_classes= 5, pretrained=False).to(device)
+    model = torch.hub.load('facebookresearch/LeViT:main', 'LeViT_256', num_classes= 4, pretrained=False).to(device)
     
     for fold, (trn_idx, val_idx) in enumerate(IEC.folds):
         # we'll train fold 0 first
